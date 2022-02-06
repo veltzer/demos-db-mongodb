@@ -3,7 +3,7 @@
 	Search dockerhub for mongodb images.
 	Follow the instructions there about how to correctly run mongodb.
 	Take care to open the right ports so that you could connect to mongodb.
-	- make sure that mongo is running using various:
+	- make sure that mongo is running using various methods:
 		- ps -ef
 		- docker ps
 		- netstat
