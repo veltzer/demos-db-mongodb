@@ -17,3 +17,19 @@
 	- you will need to install various python module(s) to talk to mongodb.
 	- only after the previous two will you be able to insert data into the mongodb.
 	make sure that your script(s) work.
+
+- write a script called "delete_all_data.py" which deleted all documents from your collection.
+	check that it works using the previous "show_all_data.py" script.
+
+- Write a new python script called "import_csv.py" which can import the movie
+	data from "movies.csv" file.
+	Only import two fields from the csv: the name of the movie and it's description.
+	Insert them as documents of the following form:
+		{ "name": "{movie_name}", "description": "{movie_description}" }
+	After import check that indeed all the data was correctly imported into the database
+	by running the "show_data.py" script from the previous phase. You should see 49 movies.
+
+	hints:
+	- you will need to use a python module that can correctly read a csv file.
+	- you will need to find the right column numbers for the data that you need (the movie name
+	and it's description)
