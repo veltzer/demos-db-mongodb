@@ -1,0 +1,18 @@
+
+- Run mongodb on your linux machine using *docker* (not any other way).
+	Search dockerhub for mongodb images.
+	Follow the instructions there about how to correctly run mongodb.
+	Take care to open the right ports so that you could connect to mongodb.
+	- make sure that mongo is running using various:
+		- ps -ef
+		- docker ps
+		- netstat
+
+- Write a python script that does two things:
+	1. insert one document (document=piece of data in mongo speak) into the database.
+	2. show all pieces of data in the database.
+	You will need to take care of:
+	- you will need to create a database and a collection within the database.
+	- you will need to install various python module(s) to talk to mongodb.
+	- only after the previous two will you be able to insert data into the mongodb.
+	make sure that your script(s) work.
