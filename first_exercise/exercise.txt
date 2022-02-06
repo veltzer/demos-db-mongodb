@@ -6,7 +6,8 @@
 	- make sure that mongo is running using various methods:
 		- ps -ef
 		- docker ps
-		- netstat
+		- sudo netstat -ln | grep [port_number]
+		- telnet localhost [port_number]
 
 - Write a python script that does two things:
 	1. insert one document (document=piece of data in mongo speak) into the database.
