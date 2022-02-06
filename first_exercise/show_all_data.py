@@ -7,5 +7,5 @@ mydb = myclient["mydatabase"]
 mycol = mydb["customers"]
 
 cursor = mycol.find({})
-for document in cursor:
-      print(document)
+for i, document in enumerate(cursor):
+      print(i, document)

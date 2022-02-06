@@ -21,7 +21,7 @@
 - write a script called "delete_all_data.py" which deleted all documents from your collection.
 	check that it works using the previous "show_all_data.py" script.
 
-- Write a new python script called "import_csv.py" which can import the movie
+- write a new python script called "import_csv.py" which can import the movie
 	data from "movies.csv" file.
 	Only import two fields from the csv: the name of the movie and it's description.
 	Insert them as documents of the following form:
