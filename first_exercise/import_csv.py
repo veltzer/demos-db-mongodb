@@ -7,7 +7,7 @@ myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["mydatabase"]
 mycol = mydb["customers"]
 
-with open('movies.csv', 'r') as file:
+with open('movies.csv') as file:
     reader = csv.reader(file)
     # skip the header line of the CSV file
     next(reader)
