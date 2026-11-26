@@ -1,0 +1,33 @@
+# For `uv sync`: this repo's Python dependencies and the tools that check
+# its Python files.
+
+[project]
+name = "demos-db-mongodb"
+version = "0.0.0"
+requires-python = ">=3.14"
+dependencies = [
+    "pymongo",
+]
+
+[dependency-groups]
+dev = [
+    "pyrefly",
+    "ruff",
+]
+
+[tool.uv]
+# Demo/teaching repo: not an installable package.
+package = false
+
+[tool.pyrefly]
+# Type checking (rsconstruct's pyrefly processor), with pyrefly's default
+# error set. "." on the search path is mypy's implicit current directory.
+# Warnings fail the check like errors (pyrefly lets them pass by default).
+min-severity = "warn"
+search-path = [
+    "first_exercise",
+    ".",
+]
+
+[tool.pyrefly.errors]
+no-any-return = "error"

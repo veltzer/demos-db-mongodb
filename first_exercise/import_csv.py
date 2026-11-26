@@ -1,6 +1,7 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 
 import csv
+
 import pymongo
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
